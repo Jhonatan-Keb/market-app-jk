@@ -18,11 +18,10 @@ public class Categoria {
 
     private Boolean estado;
 
-    //Aqui se conecta con la entidad producto
     @OneToMany(mappedBy = "categoria")
     private List<Producto> productos;
 
-    public Integer  getIdCategoria() {
+    public Integer getIdCategoria() {
         return idCategoria;
     }
 

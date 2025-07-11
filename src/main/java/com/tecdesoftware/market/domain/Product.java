@@ -1,7 +1,6 @@
 package com.tecdesoftware.market.domain;
 
 public class Product {
-
     private int productId;
     private String name;
     private int categoryId;
@@ -64,5 +63,6 @@ public class Product {
 
     public void setCategory(Category category) {
         this.category = category;
+
     }
 }

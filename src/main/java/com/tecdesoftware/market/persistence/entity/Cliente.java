@@ -9,17 +9,19 @@ import java.util.List;
 public class Cliente {
 
     @Id
-    private String id;
+
     private String nombre;
+
     @Column (name = "apellidos")
     private String apellido;
+
     private Long celular;
+
     private String direccion;
 
     @Column (name = "correo_electronico")
     private String correoElectronico;
 
-    //Aqui se conecta con la entidad compra
     @OneToMany(mappedBy = "cliente")
     private List<Compra> compras;
 
